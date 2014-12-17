@@ -1,3 +1,5 @@
 console.log("client rendering");
 
-React.renderComponent(new MainAtom(), document.body);
+Router.route("/", function() {
+	React.renderComponent(new MainAtom(), document.body);
+});
